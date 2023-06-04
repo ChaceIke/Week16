@@ -1,13 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #0bdd5c;
+  --secondary: #0a232b;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  font-family: "Poppins";
+  background-image: url('../src/Assets/earth.jpg');
+  background-size: 130%;
+}
+* {
+  color: #fff;
+  margin: 0;
+}
+p {
+  margin: 20px 0;
+}
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.colorclass {
+  background-color: #0bdd5c;
 }
+
+.text-carousel {
+  color: black;
+  background-color: var(--primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.accordion-header {
+color: #0ba747;
+}
+
+.accordion-body {
+  color: #000000;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;  /* Adjust to the desired max width */
+    margin: 0 auto;   /* Centers the form if the view width is larger than the max width */
+}
+
+.toast-placement {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 9999; /* This can be adjusted based on your layout */
+}
+
+.input-styling {
+  color: #000000;
+}
+
+.toast-header-change {
+  background-color: var(--primary);
+}
+.toast-body-change {
+  color: #000000;
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+header nav a{
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+header nav a.active {
+  background: var(--primary);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* help layout */
+
+
+/* faq */
+
+
+/* careers list */
+
+
+/* careers details */
+
+
+/* breadcrumbs */
